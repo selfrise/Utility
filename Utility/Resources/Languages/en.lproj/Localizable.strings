@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Utility
+
+  Created by Tolga YILDIRIM on 11.03.2022.
+  
+*/
+
+"errorTitle" = "Error";
+"defaultErrorMessage" = "An error occurred";
+"alertActionTitle" = "Done";
