@@ -21,6 +21,15 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1515E34327DC9CB3005B279D /* TableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E34227DC9CB3005B279D /* TableViewPresenter.swift */; };
+		1515E34527DC9CBE005B279D /* CollectionViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E34427DC9CBE005B279D /* CollectionViewPresenter.swift */; };
+		1515E34727DC9CD0005B279D /* TableViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E34627DC9CD0005B279D /* TableViewItem.swift */; };
+		1515E34927DC9CDB005B279D /* SectionHeaderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E34827DC9CDB005B279D /* SectionHeaderItem.swift */; };
+		1515E34B27DC9CE7005B279D /* CollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E34A27DC9CE7005B279D /* CollectionViewItem.swift */; };
+		1515E34D27DC9CEF005B279D /* ArrangedSubviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E34C27DC9CEF005B279D /* ArrangedSubviewItem.swift */; };
+		1515E35027DC9E3A005B279D /* CollectionViewCellReuseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E34F27DC9E3A005B279D /* CollectionViewCellReuseProtocol.swift */; };
+		1515E35227DC9EB3005B279D /* TableViewCellReuseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E35127DC9EB3005B279D /* TableViewCellReuseProtocol.swift */; };
+		1515E35427DC9F6D005B279D /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E35327DC9F6D005B279D /* Array+Extension.swift */; };
 		15CA09F527DB65D000F23DE3 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CA09EA27DB65D000F23DE3 /* Utility.framework */; };
 		15CA09FA27DB65D000F23DE3 /* UtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA09F927DB65D000F23DE3 /* UtilityTests.swift */; };
 		15CA09FB27DB65D000F23DE3 /* Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 15CA09ED27DB65D000F23DE3 /* Utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,6 +74,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1515E34227DC9CB3005B279D /* TableViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewPresenter.swift; sourceTree = "<group>"; };
+		1515E34427DC9CBE005B279D /* CollectionViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPresenter.swift; sourceTree = "<group>"; };
+		1515E34627DC9CD0005B279D /* TableViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewItem.swift; sourceTree = "<group>"; };
+		1515E34827DC9CDB005B279D /* SectionHeaderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderItem.swift; sourceTree = "<group>"; };
+		1515E34A27DC9CE7005B279D /* CollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewItem.swift; sourceTree = "<group>"; };
+		1515E34C27DC9CEF005B279D /* ArrangedSubviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangedSubviewItem.swift; sourceTree = "<group>"; };
+		1515E34F27DC9E3A005B279D /* CollectionViewCellReuseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellReuseProtocol.swift; sourceTree = "<group>"; };
+		1515E35127DC9EB3005B279D /* TableViewCellReuseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellReuseProtocol.swift; sourceTree = "<group>"; };
+		1515E35327DC9F6D005B279D /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		15CA09EA27DB65D000F23DE3 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CA09ED27DB65D000F23DE3 /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		15CA09F427DB65D000F23DE3 /* UtilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +130,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1515E34027DC9C89005B279D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1515E34127DC9C93005B279D /* Model */,
+				1515E34227DC9CB3005B279D /* TableViewPresenter.swift */,
+				1515E34427DC9CBE005B279D /* CollectionViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1515E34127DC9C93005B279D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1515E34C27DC9CEF005B279D /* ArrangedSubviewItem.swift */,
+				1515E34A27DC9CE7005B279D /* CollectionViewItem.swift */,
+				1515E34827DC9CDB005B279D /* SectionHeaderItem.swift */,
+				1515E34627DC9CD0005B279D /* TableViewItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1515E34E27DC9E26005B279D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1515E34F27DC9E3A005B279D /* CollectionViewCellReuseProtocol.swift */,
+				1515E35127DC9EB3005B279D /* TableViewCellReuseProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		15CA09E027DB65D000F23DE3 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +202,8 @@
 		15CA0A0B27DB6E1C00F23DE3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				1515E34E27DC9E26005B279D /* Protocols */,
+				1515E34027DC9C89005B279D /* Presenter */,
 				15CA0A5127DB80B200F23DE3 /* Extensions */,
 				15CA0A4E27DB809300F23DE3 /* Localization */,
 				15CA0A3827DB7CCC00F23DE3 /* AlertPresenter */,
@@ -307,6 +357,7 @@
 			children = (
 				15CA0A2227DB726800F23DE3 /* NSObject+Extension.swift */,
 				15CA0A4927DB7E1800F23DE3 /* String+Extension.swift */,
+				1515E35327DC9F6D005B279D /* Array+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -459,12 +510,21 @@
 				15CA0A2E27DB748A00F23DE3 /* SearchThrottlerTextField.swift in Sources */,
 				15CA0A0E27DB6E4900F23DE3 /* CoordinatorProtocol.swift in Sources */,
 				15CA0A2A27DB744400F23DE3 /* SearchThrottler.swift in Sources */,
+				1515E34327DC9CB3005B279D /* TableViewPresenter.swift in Sources */,
+				1515E35427DC9F6D005B279D /* Array+Extension.swift in Sources */,
+				1515E35027DC9E3A005B279D /* CollectionViewCellReuseProtocol.swift in Sources */,
+				1515E35227DC9EB3005B279D /* TableViewCellReuseProtocol.swift in Sources */,
+				1515E34527DC9CBE005B279D /* CollectionViewPresenter.swift in Sources */,
 				15CA0A4A27DB7E1800F23DE3 /* String+Extension.swift in Sources */,
 				15CA0A3727DB7B9300F23DE3 /* URLImageView.swift in Sources */,
 				15CA0A1A27DB70EE00F23DE3 /* ConstraintAnchors.swift in Sources */,
 				15CA0A3127DB766C00F23DE3 /* ImageManager.swift in Sources */,
+				1515E34927DC9CDB005B279D /* SectionHeaderItem.swift in Sources */,
+				1515E34B27DC9CE7005B279D /* CollectionViewItem.swift in Sources */,
 				15CA0A2527DB72C000F23DE3 /* UICollectionView+Extension.swift in Sources */,
+				1515E34D27DC9CEF005B279D /* ArrangedSubviewItem.swift in Sources */,
 				15CA0A1727DB6E8800F23DE3 /* Cancellable.swift in Sources */,
+				1515E34727DC9CD0005B279D /* TableViewItem.swift in Sources */,
 				15CA0A2327DB726800F23DE3 /* NSObject+Extension.swift in Sources */,
 				15CA0A1427DB6E7A00F23DE3 /* AnyCancellable.swift in Sources */,
 				15CA0A3A27DB7CD200F23DE3 /* AlertPresenter.swift in Sources */,
