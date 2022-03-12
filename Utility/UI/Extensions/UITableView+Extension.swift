@@ -55,8 +55,8 @@ public extension UITableView {
         view.delegate = data
         view.dataSource = data
         
-        registeredCells.forEach { cell in
-            view.registerCell(withName: cell.reuseIdentifier)
+        registeredCells.forEach { type in
+            view.registerCell(cellClass: type)
         }
         return view
     }
