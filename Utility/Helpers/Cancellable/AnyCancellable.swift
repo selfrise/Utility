@@ -8,7 +8,7 @@
 /// A type-erasing cancellable object that executes a provided closure when canceled.
 ///
 /// An ``AnyCancellable`` instance automatically calls ``Cancellable/cancel()`` when deinitialized.
-final class AnyCancellable: Cancellable, Hashable {
+public final class AnyCancellable: Cancellable, Hashable {
     
     typealias CancelAction = () -> Void
     
@@ -30,20 +30,20 @@ final class AnyCancellable: Cancellable, Hashable {
         cancel()
     }
     
-    func cancel() {
+    public func cancel() {
         cancelAction?()
         cancelAction = nil
     }
     
-    func store(in set: inout Set<AnyCancellable>) {
+    public func store(in set: inout Set<AnyCancellable>) {
         set.insert(self)
     }
     
-    func hash(into hasher: inout Hasher) {
+    public func hash(into hasher: inout Hasher) {
         hasher.combine(ObjectIdentifier(self))
     }
     
-    static func == (lhs: AnyCancellable, rhs: AnyCancellable) -> Bool {
+    public static func == (lhs: AnyCancellable, rhs: AnyCancellable) -> Bool {
         lhs === rhs
     }
 }

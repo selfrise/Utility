@@ -18,7 +18,7 @@ import UIKit
 /// By obtaining them from the parent, viewcontrollers don't need to reach for singletons to obtain dependencies, this way we avoid some tight-coupling.
 ///
 /// A Coordinator can also create other Coordinators, allowing for more complex flows.
-protocol CoordinatorProtocol: Dismissable, ParentCoordinatorDelegate {
+public protocol CoordinatorProtocol: Dismissable, ParentCoordinatorDelegate {
     /// The parent coordinator that created the current coordinator.
     var parentCoordinator: ParentCoordinatorDelegate? { get set }
     
@@ -27,7 +27,7 @@ protocol CoordinatorProtocol: Dismissable, ParentCoordinatorDelegate {
     func start()
 }
 
-protocol ParentCoordinatorDelegate: AnyObject {
+public protocol ParentCoordinatorDelegate: AnyObject {
     /// Child coordinators created by current coordinator
     var children: [CoordinatorProtocol] { get set }
     
@@ -39,7 +39,7 @@ protocol ParentCoordinatorDelegate: AnyObject {
 
 // MARK: - CoordinatorProtocol
 
-extension CoordinatorProtocol {
+public extension CoordinatorProtocol {
     
     func dismiss() {
         parentCoordinator?.childDidFinish(coordinator: self)
@@ -48,7 +48,7 @@ extension CoordinatorProtocol {
 
 // MARK: - ParentCoordinatorDelegate
 
-extension ParentCoordinatorDelegate {
+public extension ParentCoordinatorDelegate {
     
     func childDidFinish(coordinator: CoordinatorProtocol) {
         children = children.filter { $0 !== coordinator }
