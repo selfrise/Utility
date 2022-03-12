@@ -7,16 +7,16 @@
 
 import UIKit
 
-struct Alert: Equatable {
+public struct Alert: Equatable {
     let title: String
     let message: String
 }
 
-protocol AlertPresenter where Self: UIViewController {
+public protocol AlertPresenter where Self: UIViewController {
     func show(_ alert: Alert)
 }
 
-extension AlertPresenter {
+public extension AlertPresenter {
     
     func show(_ alert: Alert) {
         let alert = UIAlertController(title: alert.title, message: alert.message, preferredStyle: .alert)
