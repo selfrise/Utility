@@ -31,6 +31,7 @@
 		1515E35227DC9EB3005B279D /* TableViewCellReuseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E35127DC9EB3005B279D /* TableViewCellReuseProtocol.swift */; };
 		1515E35427DC9F6D005B279D /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E35327DC9F6D005B279D /* Array+Extension.swift */; };
 		1515E3A827DCAC84005B279D /* Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 1515E3A727DCAC84005B279D /* Utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		158CA9B227DCECEB00C61ECA /* UIEdgeInsets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CA9B127DCECEB00C61ECA /* UIEdgeInsets+Extension.swift */; };
 		15CA09F527DB65D000F23DE3 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CA09EA27DB65D000F23DE3 /* Utility.framework */; };
 		15CA09FA27DB65D000F23DE3 /* UtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA09F927DB65D000F23DE3 /* UtilityTests.swift */; };
 		15CA0A0E27DB6E4900F23DE3 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA0A0D27DB6E4900F23DE3 /* CoordinatorProtocol.swift */; };
@@ -84,6 +85,7 @@
 		1515E35127DC9EB3005B279D /* TableViewCellReuseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellReuseProtocol.swift; sourceTree = "<group>"; };
 		1515E35327DC9F6D005B279D /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		1515E3A727DCAC84005B279D /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		158CA9B127DCECEB00C61ECA /* UIEdgeInsets+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extension.swift"; sourceTree = "<group>"; };
 		15CA09EA27DB65D000F23DE3 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CA09F427DB65D000F23DE3 /* UtilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CA09F927DB65D000F23DE3 /* UtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTests.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				15CA0A2027DB723400F23DE3 /* UINavigationController+Extension.swift */,
 				15CA0A2427DB72C000F23DE3 /* UICollectionView+Extension.swift */,
 				15CA0A2627DB735B00F23DE3 /* UITableView+Extension.swift */,
+				158CA9B127DCECEB00C61ECA /* UIEdgeInsets+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 				15CA0A2727DB735B00F23DE3 /* UITableView+Extension.swift in Sources */,
 				15CA0A1F27DB720300F23DE3 /* UINavigationItem+Extension.swift in Sources */,
 				15CA0A1D27DB710A00F23DE3 /* UIView+Extension.swift in Sources */,
+				158CA9B227DCECEB00C61ECA /* UIEdgeInsets+Extension.swift in Sources */,
 				15CA0A1127DB6E7000F23DE3 /* Dismissable.swift in Sources */,
 				15CA0A4D27DB7FEE00F23DE3 /* BundleSPM.swift in Sources */,
 				15CA0A2127DB723400F23DE3 /* UINavigationController+Extension.swift in Sources */,

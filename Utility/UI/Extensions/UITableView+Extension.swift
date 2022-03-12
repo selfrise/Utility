@@ -13,6 +13,10 @@ public extension UITableView {
         self.register(UINib(nibName: name, bundle: .main), forCellReuseIdentifier: name)
     }
     
+    func registerCell(cellClass: UITableViewCell.Type) {
+        register(cellClass, forCellReuseIdentifier: cellClass.reuseIdentifier)
+    }
+    
     func reloadData(completion: @escaping () -> ()) {
         UIView.animate(withDuration: 0, animations: { self.reloadData()})
         {_ in completion() }
@@ -38,6 +42,23 @@ public extension UITableView {
                 tableFooterView = nil
             }
         }
+    }
+    
+    static func make(
+        with data: TableViewPresenter,
+        backgroundColor: UIColor = .clear,
+        registeredCells: [UITableViewCell.Type] = []
+    ) -> UITableView {
+        let view = UITableView()
+        view.backgroundColor = backgroundColor
+        view.separatorStyle = .none
+        view.delegate = data
+        view.dataSource = data
+        
+        registeredCells.forEach { cell in
+            view.registerCell(withName: cell.reuseIdentifier)
+        }
+        return view
     }
 }
 
