@@ -71,7 +71,7 @@ public extension UIView {
 
 // MARK: - UIActivityIndicatorView
 
-extension UIView {
+public extension UIView {
     private static let indicatorViewKey = "IndicatorView"
     
     func setLoading(_ show: Bool) {
