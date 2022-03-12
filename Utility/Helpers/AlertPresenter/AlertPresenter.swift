@@ -10,6 +10,11 @@ import UIKit
 public struct Alert: Equatable {
     let title: String
     let message: String
+    
+    public init(title: String, message: String) {
+        self.title = title
+        self.message = message
+    }
 }
 
 public protocol AlertPresenter where Self: UIViewController {
