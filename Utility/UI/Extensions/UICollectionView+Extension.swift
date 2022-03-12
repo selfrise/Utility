@@ -10,6 +10,10 @@ import UIKit
 
 public extension UICollectionView {
     
+    func register<Cell: UICollectionViewCell>(_ cellClass: Cell.Type) {
+        register(Cell.self, forCellWithReuseIdentifier: Cell.className)
+    }
+    
     func dequeueAutomatic<T:UICollectionViewCell>(collectionCell : T.Type, indexPath : IndexPath) -> T{
         dequeueReusableCell(withReuseIdentifier: collectionCell.className, for: indexPath) as! T
     }
