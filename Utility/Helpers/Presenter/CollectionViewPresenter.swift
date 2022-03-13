@@ -10,6 +10,7 @@ import UIKit
 public protocol CollectionViewPresenterDelegate: AnyObject {
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>)
     func scrollViewDidScroll(_ scrollView: UIScrollView)
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView)
 }
 
 public final class CollectionViewPresenter: NSObject {
@@ -97,6 +98,10 @@ extension CollectionViewPresenter {
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         delegate?.scrollViewDidScroll(scrollView)
     }
+    
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        delegate?.scrollViewDidEndDecelerating(scrollView)
+    }
 }
 
 extension CollectionViewPresenterDelegate {
@@ -108,4 +113,6 @@ extension CollectionViewPresenterDelegate {
     ) { }
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) { }
+    
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) { }
 }
