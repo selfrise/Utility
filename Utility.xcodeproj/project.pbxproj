@@ -55,7 +55,6 @@
 		15CA0A4A27DB7E1800F23DE3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA0A4927DB7E1800F23DE3 /* String+Extension.swift */; };
 		15CA0A4D27DB7FEE00F23DE3 /* BundleSPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA0A4C27DB7FEE00F23DE3 /* BundleSPM.swift */; };
 		15CA0A5027DB809B00F23DE3 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA0A4F27DB809B00F23DE3 /* Localization.swift */; };
-		15DC91A027DE017000A811D5 /* LoadMoreControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC919F27DE017000A811D5 /* LoadMoreControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,7 +111,6 @@
 		15CA0A4927DB7E1800F23DE3 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		15CA0A4C27DB7FEE00F23DE3 /* BundleSPM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleSPM.swift; sourceTree = "<group>"; };
 		15CA0A4F27DB809B00F23DE3 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
-		15DC919F27DE017000A811D5 /* LoadMoreControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,7 +245,6 @@
 		15CA0A1827DB70E400F23DE3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				15DC919E27DE016400A811D5 /* LoadMoreControl */,
 				15CA0A3527DB7B8800F23DE3 /* URLImageView */,
 				15CA0A2C27DB747D00F23DE3 /* SearchThrottlerTextField */,
 				15CA0A2B27DB747000F23DE3 /* Constraint */,
@@ -366,14 +363,6 @@
 				1515E35327DC9F6D005B279D /* Array+Extension.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		15DC919E27DE016400A811D5 /* LoadMoreControl */ = {
-			isa = PBXGroup;
-			children = (
-				15DC919F27DE017000A811D5 /* LoadMoreControl.swift */,
-			);
-			path = LoadMoreControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,7 +527,6 @@
 				1515E34B27DC9CE7005B279D /* CollectionViewItem.swift in Sources */,
 				15CA0A2527DB72C000F23DE3 /* UICollectionView+Extension.swift in Sources */,
 				1515E34D27DC9CEF005B279D /* ArrangedSubviewItem.swift in Sources */,
-				15DC91A027DE017000A811D5 /* LoadMoreControl.swift in Sources */,
 				15CA0A1727DB6E8800F23DE3 /* Cancellable.swift in Sources */,
 				1515E34727DC9CD0005B279D /* TableViewItem.swift in Sources */,
 				15CA0A2327DB726800F23DE3 /* NSObject+Extension.swift in Sources */,
