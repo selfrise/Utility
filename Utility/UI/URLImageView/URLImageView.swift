@@ -48,10 +48,14 @@ public final class URLImageView: UIImageView {
         : loadingIndicator.stopAnimating()
     }
     
-    // MARK: - Internal methods
+    // MARK: - public methods
     
-    public func imageWithURL(_ url: String, placeHolder: UIImage?) {
-        let urlString = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+    public func imageWithURL(_ url: String?, placeHolder: UIImage?) {
+        guard let url = url,
+              let urlString = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
+                  image = placeHolder
+                  return
+              }
         
         imageTask?.cancel()
         imageTask = nil
