@@ -45,7 +45,7 @@
 		15CA0A2327DB726800F23DE3 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA0A2227DB726800F23DE3 /* NSObject+Extension.swift */; };
 		15CA0A2527DB72C000F23DE3 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA0A2427DB72C000F23DE3 /* UICollectionView+Extension.swift */; };
 		15CA0A2727DB735B00F23DE3 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA0A2627DB735B00F23DE3 /* UITableView+Extension.swift */; };
-		15CA0A2A27DB744400F23DE3 /* SearchThrottler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA0A2927DB744400F23DE3 /* SearchThrottler.swift */; };
+		15CA0A2A27DB744400F23DE3 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA0A2927DB744400F23DE3 /* Throttler.swift */; };
 		15CA0A2E27DB748A00F23DE3 /* SearchThrottlerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA0A2D27DB748A00F23DE3 /* SearchThrottlerTextField.swift */; };
 		15CA0A3127DB766C00F23DE3 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA0A3027DB766C00F23DE3 /* ImageManager.swift */; };
 		15CA0A3427DB769000F23DE3 /* ImageManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA0A3327DB769000F23DE3 /* ImageManagerTests.swift */; };
@@ -100,7 +100,7 @@
 		15CA0A2227DB726800F23DE3 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		15CA0A2427DB72C000F23DE3 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		15CA0A2627DB735B00F23DE3 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
-		15CA0A2927DB744400F23DE3 /* SearchThrottler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchThrottler.swift; sourceTree = "<group>"; };
+		15CA0A2927DB744400F23DE3 /* Throttler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
 		15CA0A2D27DB748A00F23DE3 /* SearchThrottlerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchThrottlerTextField.swift; sourceTree = "<group>"; };
 		15CA0A3027DB766C00F23DE3 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		15CA0A3327DB769000F23DE3 /* ImageManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManagerTests.swift; sourceTree = "<group>"; };
@@ -269,7 +269,7 @@
 		15CA0A2827DB743100F23DE3 /* Throttler */ = {
 			isa = PBXGroup;
 			children = (
-				15CA0A2927DB744400F23DE3 /* SearchThrottler.swift */,
+				15CA0A2927DB744400F23DE3 /* Throttler.swift */,
 			);
 			path = Throttler;
 			sourceTree = "<group>";
@@ -513,7 +513,7 @@
 				15CA0A2127DB723400F23DE3 /* UINavigationController+Extension.swift in Sources */,
 				15CA0A2E27DB748A00F23DE3 /* SearchThrottlerTextField.swift in Sources */,
 				15CA0A0E27DB6E4900F23DE3 /* CoordinatorProtocol.swift in Sources */,
-				15CA0A2A27DB744400F23DE3 /* SearchThrottler.swift in Sources */,
+				15CA0A2A27DB744400F23DE3 /* Throttler.swift in Sources */,
 				1515E34327DC9CB3005B279D /* TableViewPresenter.swift in Sources */,
 				1515E35427DC9F6D005B279D /* Array+Extension.swift in Sources */,
 				1515E35027DC9E3A005B279D /* CollectionViewCellReuseProtocol.swift in Sources */,

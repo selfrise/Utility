@@ -1,5 +1,5 @@
 //
-//  SearchThrottler.swift
+//  Throttler.swift
 //  Utility
 //
 //  Created by Tolga YILDIRIM on 11.03.2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class SearchThrottler {
+public class Throttler {
 
     private var workItem: DispatchWorkItem = DispatchWorkItem(block: {})
     private var previousRun: Date = Date.distantPast
