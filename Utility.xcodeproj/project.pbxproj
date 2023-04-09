@@ -55,6 +55,7 @@
 		15CA0A4A27DB7E1800F23DE3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA0A4927DB7E1800F23DE3 /* String+Extension.swift */; };
 		15CA0A4D27DB7FEE00F23DE3 /* BundleSPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA0A4C27DB7FEE00F23DE3 /* BundleSPM.swift */; };
 		15CA0A5027DB809B00F23DE3 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA0A4F27DB809B00F23DE3 /* Localization.swift */; };
+		FAA0333329E3051A00355211 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0333229E3051A00355211 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		15CA0A4927DB7E1800F23DE3 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		15CA0A4C27DB7FEE00F23DE3 /* BundleSPM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleSPM.swift; sourceTree = "<group>"; };
 		15CA0A4F27DB809B00F23DE3 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		FAA0333229E3051A00355211 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +264,7 @@
 				15CA0A2427DB72C000F23DE3 /* UICollectionView+Extension.swift */,
 				15CA0A2627DB735B00F23DE3 /* UITableView+Extension.swift */,
 				158CA9B127DCECEB00C61ECA /* UIEdgeInsets+Extension.swift */,
+				FAA0333229E3051A00355211 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				1515E34527DC9CBE005B279D /* CollectionViewPresenter.swift in Sources */,
 				15CA0A4A27DB7E1800F23DE3 /* String+Extension.swift in Sources */,
 				15CA0A3727DB7B9300F23DE3 /* URLImageView.swift in Sources */,
+				FAA0333329E3051A00355211 /* UIViewController+Extension.swift in Sources */,
 				15CA0A1A27DB70EE00F23DE3 /* ConstraintAnchors.swift in Sources */,
 				15CA0A3127DB766C00F23DE3 /* ImageManager.swift in Sources */,
 				1515E34927DC9CDB005B279D /* SectionHeaderItem.swift in Sources */,
